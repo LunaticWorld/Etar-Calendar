@@ -836,7 +836,7 @@ public class CalendarEventModel implements Serializable {
      * <p/>
      * Instances of the class are immutable.
      */
-    public static class ReminderEntry implements Comparable<ReminderEntry>, Serializable {
+    public static class ReminderEntry implements Comparable<ReminderEntry>, Serializable {  // TODO DATA TYPE입니당
         private final int mMinutes;
         private final int mMethod;
 

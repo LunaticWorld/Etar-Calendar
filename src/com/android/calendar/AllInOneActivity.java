@@ -350,6 +350,7 @@ public class AllInOneActivity extends AbstractCalendarActivity implements EventH
         Utils.setAllowWeekForDetailView(mIsMultipane);
 
         // setContentView must be called before configureActionBar
+
         setContentView(R.layout.all_in_one_material);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -460,7 +461,7 @@ public class AllInOneActivity extends AbstractCalendarActivity implements EventH
                 case ViewType.MONTH:
                     titleResource = R.string.month_view;
                     break;
-                case ViewType.WEEK:
+                case ViewType.WEEK: // TODO 이거 해야되요 Side Bar 처 넣는거요
                 default:
                     titleResource = R.string.week_view;
                     break;

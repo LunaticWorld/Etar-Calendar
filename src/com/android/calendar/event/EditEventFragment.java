@@ -335,7 +335,7 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
         }
 
 
-        if (mUseCustomActionBar) {
+        if (mUseCustomActionBar) {  // TODO 찾았다 OK 버튼 여기가 우측하단 +버튼 누르고 들어가면 나오는 Fragment 화면 UI 임
             View actionBarButtons = inflater.inflate(R.layout.edit_event_custom_actionbar,
                     new LinearLayout(mContext), false);
             View cancelActionView = actionBarButtons.findViewById(R.id.action_cancel);
@@ -899,7 +899,7 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
         }
 
         @Override
-        public void run() {
+        public void run() {                                             // TODO DATA RUnning 부분
             // We only want this to get called once, either because the user
             // pressed back/home or one of the buttons on screen
             mSaveOnDetach = false;

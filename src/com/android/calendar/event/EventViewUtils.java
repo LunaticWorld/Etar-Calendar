@@ -113,7 +113,7 @@ public class EventViewUtils {
      * @param reminderMethodValues Maps array index to alert method constant.
      * @return Array with reminder data.
      */
-    public static ArrayList<ReminderEntry> reminderItemsToReminders(
+    public static ArrayList<ReminderEntry> reminderItemsToReminders( // TODO +버튼 이후 화면을 긁어오는 곳
             ArrayList<LinearLayout> reminderItems, ArrayList<Integer> reminderMinuteValues,
             ArrayList<Integer> reminderMethodValues) {
         int len = reminderItems.size();
